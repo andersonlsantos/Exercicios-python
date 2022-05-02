@@ -1,0 +1,14 @@
+nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota: '))
+media = (nota1 + nota2) / 2
+if nota1 > 10 or nota2 > 10:
+    print('Opção invalida, as opções tem que ser menor que 10')
+elif media >= 7.0:
+    print('Tirando {} e {} a média do aluno é {:.1f}'.format(nota1, nota2, media))
+    print('O aluno está APROVADO.')
+elif media >= 5.0 and media <= 5.9:
+    print('Tirando {} e {} a média do aluno é {:.1f}'.format(nota1, nota2, media))
+    print('O aluno está RECUPERAÇÃO.')
+else:
+    print('Tirando {} e {} a média do aluno é {:.1f}'.format(nota1, nota2, media))
+    print('O aluno está REPROVADO.')

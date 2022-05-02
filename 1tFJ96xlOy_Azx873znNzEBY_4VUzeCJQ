@@ -1,0 +1,6 @@
+a = float(input('Qual é o salario do funcionario? R$'))
+if a <= 1250:
+    c = ((15 / 100) * a) + a
+else:
+    c = ((10 / 100) * a) + a
+print('Quem ganhava R${:.2f} passa a ganhar agora R${:.2f} agora'.format(a, c))

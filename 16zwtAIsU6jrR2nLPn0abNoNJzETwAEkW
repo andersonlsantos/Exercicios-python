@@ -1,0 +1,18 @@
+from datetime import date
+ano = int(input('Ano de nacimento: '))
+anoAtual = date.today().year
+print('Quem nasceu em {} tem {} anos em {}.'.format(ano, anoAtual - ano, anoAtual))
+if anoAtual - ano < 18 and 18 - (anoAtual - ano) == 1:
+    print('Ainda falta {} ano para se alistar.'.format(18 - (anoAtual - ano)))
+    print('Seu alistamento será em {}.'.format((18 - (anoAtual - ano) + (anoAtual - ano) + ano)))
+elif anoAtual - ano < 18:
+    print('Ainda faltam {} anos para se alistar.'.format(18 - (anoAtual - ano)))
+    print('Seu alistamento será em {}.'.format((18 - (anoAtual - ano) + (anoAtual - ano) + ano)))
+elif anoAtual - ano > 18 and anoAtual - (ano + 18) == 1:
+    print('Você já deveria ter se alistado há {} ano.'.format(anoAtual - (ano + 18)))
+    print('Seu alistamento foi em {}.'.format(ano + 18))
+elif anoAtual - ano > 18:
+    print('Você já deveria ter se alistado há {} anos.'.format(anoAtual - (ano + 18)))
+    print('Seu alistamento foi em {}.'.format(ano + 18))
+else:
+    print('Você tem que se alistar IMEDIATAMENTE!')

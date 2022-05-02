@@ -1,0 +1,7 @@
+viagem = float(input('Qual é a distancia da sua viagem? '))
+if viagem <= 200:
+    valor = viagem * 0.50
+else:
+    valor = viagem * 0.45
+print('Você esta preste a começar uma viagem de {:.1f}km'.format(viagem))
+print('O preço da sua viagem será de R${:.2f}'.format(valor))

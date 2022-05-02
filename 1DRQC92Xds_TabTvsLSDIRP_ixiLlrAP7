@@ -1,0 +1,6 @@
+numero = float(input('Me diga um numero qualquer: '))
+if numero % 2 == 0:
+    numero2 = 'PAR'
+else:
+    numero2 = 'ÍMPAR'
+print('O numero {:.0f} é {}'.format(numero, numero2))

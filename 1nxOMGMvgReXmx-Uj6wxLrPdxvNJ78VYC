@@ -1,0 +1,18 @@
+palavra = input('Digite uma frase: ').upper().strip().split()
+semEspaco = ''.join(palavra)
+numero = len(semEspaco) 
+"""b = semEspaco[::-1]
+print(semEspaco, end=' ')
+print(b)
+if semEspaco == b:
+    print('Temos um palíntromo!')
+else:
+    print('a frase digitada não é um palindromo!')"""
+b = ''
+for letra in range(numero -1, -1, -1):
+    b += semEspaco[letra]
+print(semEspaco, b)
+if semEspaco == b:
+    print('Temos um palíntromo!')
+else:
+    print('a frase digitada não é um palindromo!')

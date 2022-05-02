@@ -1,0 +1,10 @@
+print('=' * 30)
+print('    10 TERMOS DE UMA PA')
+print('=' * 30)
+termo1 = int(input('Primeiro termo: '))
+termo2 = int(input('Razão: '))
+num = 0
+for numero in range(termo1, termo1 + 10 * termo2, termo2):
+    num += 1
+    print(numero, end=' - ')
+print('acabou', num)

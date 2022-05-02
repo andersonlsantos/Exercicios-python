@@ -1,0 +1,48 @@
+import random
+print("""Suas opções: 
+[ \033[1;34m1\033[m ] \033[1;32mPÉDRA\033[m
+[ \033[1;34m2\033[m ] \033[1;32mPAPEL\033[m
+[ \033[1;34m3\033[m ] \033[1;32mTESOURA\033[m""")
+jogada = float(input('Qual a sua jogada: '))
+if jogada > 3:
+    print('Opção {:.0f} não é valida, tente novamente e escolha um numero de 1 a 3!'.format(jogada))
+elif jogada < 1:
+    print('Opção zero ou menor que zero não é valida, tente novamente e escolha um numero de 1 a 3!') 
+rand = random.randint(1, 3)
+print(rand)
+if jogada == 1 and rand == 1:
+    print('Computador jogou \033[1;31mPÉDRA\033[m')
+    print('Jogador jogou \033[1;34mPÉDRA\033[m')
+    print('\033[1;32mEMPATE\033[m')
+elif jogada == 1 and rand == 2:
+    print('Computador jogou \033[1;31mPAPEL\033[m')
+    print('Jogador jogou \033[1;34mPÉDRA\033[m')
+    print('\033[1;31mCOMPUTADOR VENCEU\033[m')
+elif jogada == 1 and rand == 3:
+    print('Computador jogou \033[1;31mTESOURA\033[m')
+    print('Jogador jogou \033[1;34mPÉDRA\033[m')
+    print('\033[1;34mJOGADOR VENCEU\033[m')
+elif jogada == 2 and rand == 1:
+    print('Computador jogou \033[1;31mPÉDRA\033[m')
+    print('Jogador jogou \033[1;34mPAPEL\033[m')
+    print('\033[1;34mJOGADOR VENCEU\033[m')   
+elif jogada == 2 and rand == 2:
+    print('Computador jogou \033[1;31mPAPEL\033[m')
+    print('Jogador jogou \033[1;34mPAPEL\033[m')
+    print('\033[1;32mEMPATE\033[m') 
+elif jogada == 2 and rand == 3:
+    print('Computador jogou \033[1;31mTESOURA\033[m')
+    print('Jogador jogou \033[1;34mPAPEL\033[m')
+    print('\033[1;31mCOMPUTADOR VENCEU\033[m')
+elif jogada == 3 and rand == 1:
+    print('Computador jogou \033[1;31mPÉDRA\033[m')
+    print('Jogador jogou \033[1;34mTESOURA\033[m')
+    print('\033[1;31mCOMPUTADOR VENCEU\033[m')
+elif jogada == 3 and rand == 2:
+    print('Computador jogou \033[1;31mPAPEL\033[m')
+    print('Jogador jogou \033[1;34mTESOURA\033[m')
+    print('\033[1;34mJOGADOR VENCEU\033[m')
+elif jogada == 3 and rand == 3:
+    print('Computador jogou \033[1;31mTESOURA\033[m')
+    print('Jogador jogou \033[1;34mTESOURA\033[m')
+    print('\033[1;32mEMPATE\033[m') 

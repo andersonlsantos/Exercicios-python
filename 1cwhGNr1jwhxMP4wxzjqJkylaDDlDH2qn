@@ -1,0 +1,10 @@
+casa = float(input('Valor da casa: R$'))
+salario = float(input('Sálario do comprador: R$'))
+anos = float(input('Quantos anos de financiamento? '))
+prestacao = casa / (anos * 12)
+porcetagem = (30 / 100 * salario)
+print('Para pagar uma casa de R${:.2f} em {:.1f} anos a prestação sera de R${:.2f}'.format(casa, anos, prestacao))
+if prestacao > porcetagem:
+    print('Epréstimo NEGADO!')
+else:
+    print('Empréstimo pode ser CONCEDIDO!')

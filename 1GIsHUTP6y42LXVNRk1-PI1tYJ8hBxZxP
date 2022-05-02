@@ -1,0 +1,15 @@
+print('-=-' * 15)
+print('Analizador de Triângulos')
+print('-=-' * 15)
+a = float(input('Primeiro segmento: '))
+b = float(input(('Segundo segmento: ')))
+c = float(input('Terceiro segmento: '))
+if c - b < a < c + b:
+    d = 'PODEM FORMAR'
+if c - a < b < c + a:
+    d = 'PODEM FORMAR'
+if a - b < c < a +b:
+    d = 'PODEM FORMAR'
+else:
+    d = 'NÃO PODEM FORMAR'
+print('Os segmentos acima {} triângulo!'.format(d))

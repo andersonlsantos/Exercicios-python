@@ -1,0 +1,32 @@
+print('=' * 12, 'LOJAS GUIMARÃES', '=' * 12)
+preco = float(input('Preço das compras: R$'))
+print("""FORMAS DE PAGAMENTO
+[ 1 ] à vista dinheiro/cheque
+[ 2 ] à vista cartão
+[ 3 ] 2x no cartão 
+[ 4 ] 3x ou mais no cartão""")
+opcao = int(input('Qual é a opção? '))
+if opcao > 4:
+    print('Opção invalida tente novamente')
+elif opcao < 1:
+    print('Opção invalida tente novamente')
+if opcao == 1:
+    print('Sua compra de R${:.2f} vai custar R${:.2f} no final'.format(preco, preco - (10 / 100 * preco)))
+elif opcao == 2:
+    print('Sua compra de R${:.2f} vai custar R${:.2f} no final'.format(preco, preco - (5 / 100 * preco)))
+elif opcao == 3:
+    opcao2 = int(input('1 ou 2 parcelas? '))
+    if opcao2 > 2:
+        print('Opção invalida tente novamente')
+    elif opcao2 < 1:
+        print('Opção invalida tente novamente')
+    elif opcao2 == 1:
+        print('Sua compra vai custar R${:.2f} NO FINAL'.format(preco))
+    elif opcao2 == 2:
+        print('Sua compra será parcelada em 2x de R${:.2f} SEM JUROS'.format(preco / opcao2))
+        print('Sua compra vai custar R${:.2f} NO FINAL'.format(preco))
+elif opcao == 4:
+    opcao3 = int(input('Quantas parcelas? '))
+    if opcao3:
+        print('Sua compra será parcelada em {}x de R${:.2f} COM JUROS'.format(opcao3, (preco + (20 / 100 * preco)) / opcao3))
+        print('Sua compra de R${:.2f} vai custar R${:.2f} no final'.format(preco, preco + (20 / 100 * preco)))

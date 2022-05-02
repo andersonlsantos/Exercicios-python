@@ -1,0 +1,19 @@
+numero = int(input('Digite um número inteiro: '))
+print('''
+Escolha uma das bases para a conversão:
+[1] converter para BINÁRIO
+[2] converter para OCTAL
+[3] converter para HEXADECIMAL''')
+decicao = int(input('Sua opçõa: '))
+binario = bin(numero)
+octal = oct(numero)
+hexadecimal = hex(numero)
+if decicao == 1:
+    print('{} convertido para BINÁRIO é igual a {}'.format(numero, str(binario)[2:]))
+elif decicao == 2:
+    print('{} convertido para OCTAL é igual a {}'.format(numero, str(octal)[2:]))
+elif decicao == 3:
+    print('{} convertido para HEXADECIMAL é igual a {}'.format(numero, str(hexadecimal)[2:]))
+else:
+    print('OPÇÃO INVÁLIDA TENTE NOVAMENTE')
+a

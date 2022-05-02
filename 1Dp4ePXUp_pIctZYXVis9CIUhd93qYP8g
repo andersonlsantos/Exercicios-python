@@ -1,0 +1,15 @@
+import random
+na = str(input('Primeiro Aluno: '))
+nb = str(input('Segundo aluno: '))
+nc = str(input('Terceiro aluno: '))
+nd = str(input('Quarto aluno: '))
+a = random.randint(1, 4)
+if a == 1:
+    b = na
+if a == 2:
+    b = nb
+if a == 3:
+    b = nc
+if a == 4:
+    b = nd
+print('O aluno escolhido foi {}'.format(b))

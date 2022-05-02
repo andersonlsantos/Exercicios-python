@@ -1,0 +1,6 @@
+numero = str(input('Emforme um número: ')).strip()
+unidade = len(numero)
+print('Unidade: {}'.format(numero[unidade - 1]))
+print('Dezena: {}'.format(numero[unidade - 2 ]))
+print('Centena: {}'.format(numero[unidade - 3]))
+print('Milhar: {}'.format(numero[unidade - 4]))

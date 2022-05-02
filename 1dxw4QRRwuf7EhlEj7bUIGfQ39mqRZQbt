@@ -1,0 +1,6 @@
+a = float(input('Digite um valor: '))
+if a <= 0:
+    b = 0
+else:
+    b = int(a)
+print('O valor digitado foi {} e sua porção inteira é {:.0f}'.format(a, b))

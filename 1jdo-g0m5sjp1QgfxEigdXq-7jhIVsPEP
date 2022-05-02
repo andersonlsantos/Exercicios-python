@@ -1,0 +1,4 @@
+a = float(input('Comprimento do cateto obosto: '))
+b = float(input('Comprimento do cateto adjacente: '))
+d = a ** 2 + b ** 2
+print('A hipotenusa vai medir {:.2f}'.format(d ** (1 / 2)))

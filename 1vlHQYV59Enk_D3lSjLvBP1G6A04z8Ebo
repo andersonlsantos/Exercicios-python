@@ -1,0 +1,28 @@
+primeiroValor = float(input('Primeiro valor: '))
+segundoValor = float(input('Segundo valor: '))
+opecao = ''
+while opecao != 5:
+    print('[ 1 ] somar')
+    print('[ 2 ] multiplicar')
+    print('[ 3 ] maior')
+    print('[ 4 ] novos números')
+    print('[ 5 ] sair do programa')
+    opecao = float(input('>>>>>>Qual é a sua opção? '))
+    if opecao > 5:
+        print('Opção invalida tente novamente!')
+    elif opecao == 1:
+        print('{:.0f} + {:.0f} = {:.0f}'.format(primeiroValor, segundoValor, primeiroValor + segundoValor))
+    elif opecao == 2:
+        print('{:.0f} x {:.0f} = {:.0f}'.format(primeiroValor, segundoValor, primeiroValor * segundoValor))
+    elif opecao == 3:
+        if primeiroValor > segundoValor:
+            print('Entre {:.0f} e {:.0f} o maior é {:.0f}'.format(primeiroValor, segundoValor, primeiroValor))
+        else:
+            print('Entre {:.0f} e {:.0f} o maior é {:.0f}'.format(primeiroValor, segundoValor, segundoValor))
+    elif opecao == 4:
+        primeiroValor = float(input('Primeiro valor: '))
+        segundoValor = float(input('Segundo valor: '))
+    elif opecao == 5:
+        print('Finalizado')
+    print('=-=' * 10)
+print('Fim do programa! Volte sempre!')

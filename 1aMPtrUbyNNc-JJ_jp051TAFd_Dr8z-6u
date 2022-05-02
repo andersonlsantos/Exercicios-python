@@ -1,0 +1,7 @@
+import random
+na = str(input('Primeiro Aluno: '))
+nb = str(input('Segundo aluno: '))
+nc = str(input('Terceiro aluno: '))
+nd = str(input('Quarto aluno: '))
+es = random.sample([na, nb, nc, nd], k = 4)
+print(es)

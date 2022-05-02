@@ -1,0 +1,2 @@
+ondeNaceu = input('Em que cidaede voce nasceu: ').strip()
+print('santo' in ondeNaceu.lower())

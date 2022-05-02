@@ -1,0 +1,11 @@
+a = int(input('Primeiro segmento: '))
+b = int(input('Segundo segmento: '))
+c = int(input('Terceiro segmento: '))
+if b - c < a < b + c and a - c < b < a + c and a - b < c < a + b and a == b and c == a:
+    print('Os segmentos acima podem formar um triangulo equilátero')
+elif b - c < a < b + c and a - c < b < a + c and a - b < c < a + b and a != b and b != c and c != a:
+    print('Os segmentos acima podem formar um triangulo escaleno')
+elif b - c < a < b + c and a - c < b < a + c and a - b < c < a + b and a == b or a == c or b == a or b == c or c == a or c == b:
+    print('Os segmentos acima podem formar um triangulo isósceles')
+else:
+    print('Não podem formar triangulo')
